@@ -1,0 +1,3 @@
+[submodule "ArchLinux/packer-arch"]
+	path = ArchLinux/packer-arch
+	url = git@github.com:elasticdog/packer-arch.git
