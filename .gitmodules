@@ -1,3 +1,6 @@
 [submodule "ArchLinux/packer-arch"]
 	path = ArchLinux/packer-arch
 	url = git@github.com:elasticdog/packer-arch.git
+[submodule "packer-nixos-amd64"]
+	path = packer-nixos-amd64
+	url = git@github.com:cosmo0920/packer-nixos-amd64.git
