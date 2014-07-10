@@ -4,3 +4,6 @@
 [submodule "packer-nixos-amd64"]
 	path = packer-nixos-amd64
 	url = git@github.com:cosmo0920/packer-nixos-amd64.git
+[submodule "packer-template-Ubuntu-12.04.4-amd64-for-Ruby-GNOME2"]
+	path = packer-template-Ubuntu-12.04.4-amd64-for-Ruby-GNOME2
+	url = git@github.com:cosmo0920/packer-template-Ubuntu-12.04.4-amd64-for-Ruby-GNOME2.git
