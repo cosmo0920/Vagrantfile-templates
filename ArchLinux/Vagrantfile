@@ -23,6 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   $script = <<-SCRIPT
+  sudo pacman -S --noconfirm pkgbuild-introspection
   echo "Installing yaourt..."
   curl -O https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz
   tar zxvf package-query.tar.gz
