@@ -23,6 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   $script = <<-SCRIPT
+  echo "Installing pkgbuild-introspection..."
   sudo pacman -S --noconfirm pkgbuild-introspection
   echo "Installing yaourt..."
   curl -O https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz
@@ -35,6 +36,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   cd yaourt
   makepkg -si --noconfirm --asroot
   cd ..
+  echo "enable parallel build..."
+  sudo sed -i -e 's/^#MAKEFLAGS/MAKEFLAGS/g' /etc/makepkg.conf
   SCRIPT
 
   config.vm.provision :shell, inline: $script
